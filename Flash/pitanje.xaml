@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flash.pitanje">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Pišite nam" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <Grid>
+            <BoxView x:Name="bgGradient">
+                <BoxView.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#451244"  Offset="0.3"/>
+                        <GradientStop Color="#75202c" Offset="0.3"/>
+                        <GradientStop Color="#793911" Offset="0.4"/>
+                        <GradientStop Color="#75202c" Offset="0.7"/>
+                        <GradientStop Color="#451244"  Offset="0.8"/>
+                    </LinearGradientBrush>
+                </BoxView.Background>
+            </BoxView>
+            <StackLayout VerticalOptions="Center" Margin="30,0">
+                <Entry Placeholder="Vaše ime i prezime" FontSize="20" x:Name="EntryIme"  TextColor="White" PlaceholderColor="White" ClearButtonVisibility="WhileEditing" ReturnType="Next"/>
+                <Entry Placeholder="E-mail" FontSize="20" x:Name="EntryEmail"  TextColor="White" PlaceholderColor="White" ClearButtonVisibility="WhileEditing" ReturnType="Next"/>
+                <Entry Placeholder="Naslov poruke" FontSize="20" x:Name="EntryNaslov" TextColor="White" PlaceholderColor="White" ClearButtonVisibility="WhileEditing" ReturnType="Next"/>
+                <Editor Keyboard="Chat" Placeholder="Tekst poruke" FontSize="20" x:Name="EntryPoruka" TextColor="White" PlaceholderColor="White" AutoSize="TextChanges"/>
+                <Button Text="Pošalji poruku"  HeightRequest="60" Margin="40,30,40,0" TextColor="White" BackgroundColor="#F27121" Clicked="Button_Clicked" FontSize="15" FontAttributes="Bold" BorderWidth="1.5" CornerRadius="50" BorderColor="#fe8402"/>
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

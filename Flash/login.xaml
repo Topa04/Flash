@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flash.login"
+             BackgroundImageSource="pozadina.jpg"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:local="clr-namespace:Flash">
+
+    <ContentPage.Content>
+        <Grid Margin="20,0,20,0" VerticalOptions="StartAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0" Margin="0,100,0,50">
+                <Image Source="flash2.png" HeightRequest="120"/>
+                <Label Text="Dobrodošli!" HorizontalOptions="CenterAndExpand" FontSize="34" FontAttributes="bold" TextColor="White"/>
+            </StackLayout>
+            <Frame Grid.Row="1" CornerRadius="50" BorderColor="#999999" HasShadow="false" HeightRequest="400" BackgroundColor="#e6e6e6">
+                <StackLayout>
+                    <Frame BackgroundColor="White" CornerRadius="30" Padding="0" Margin="20,40,20,20">
+                        <local:CustomEntry Placeholder="Korisničko ime" FontSize="20" x:Name="unosUserName" PlaceholderColor="#f69c64" TextColor="#F27121" Margin="20,5" FontAttributes="Bold"  ClearButtonVisibility="WhileEditing" ReturnType="Next"/>
+                    </Frame>
+                    <Frame BackgroundColor="White" CornerRadius="30" Padding="0" Margin="20,0,20,60">
+                        <local:CustomEntry Placeholder="Šifra" FontSize="20" IsPassword="True" x:Name="unosSifre" PlaceholderColor="#f69c64" TextColor="#F27121" Margin="20,5" FontAttributes="Bold"  ClearButtonVisibility="WhileEditing" ReturnType="Next"/>
+                    </Frame>
+                    <Button Text="Login"  VerticalOptions="Center" HeightRequest="60" TextColor="WHite" FontSize="18" FontAttributes="Bold" Clicked="Prijava" CornerRadius="30" BorderWidth="1.5" BorderColor="LightGray" Margin="20,30,20,45">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="1,0">
+                                <GradientStop Color="#F27121"  Offset="0.1"/>
+                                <GradientStop Color="#E94057" Offset="0.8"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Label HorizontalOptions="CenterAndExpand" Text="Nemate račun? " TextColor="Gray" Margin="-105,0,0,0" FontAttributes="Bold" FontSize="18"/>
+
+                    <Button Text="Registrujte se" VerticalOptions="Center" TextColor="#F27121" Background="transparent" FontSize="18" FontAttributes="Bold" Clicked="Button_Clicked1" TextTransform="None" Margin="105,-40,0,0"/>
+                </StackLayout>
+            </Frame>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage> 

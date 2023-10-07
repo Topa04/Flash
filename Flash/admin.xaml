@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flash.admin"
+             Title="Admin"
+             BackgroundColor="#080433"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid>
+            <BoxView x:Name="bgGradient">
+                <BoxView.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#451244"  Offset="0.3"/>
+                        <GradientStop Color="#75202c" Offset="0.3"/>
+                        <GradientStop Color="#793911" Offset="0.4"/>
+                        <GradientStop Color="#75202c" Offset="0.7"/>
+                        <GradientStop Color="#451244"  Offset="0.8"/>
+                    </LinearGradientBrush>
+                </BoxView.Background>
+            </BoxView>
+            <StackLayout VerticalOptions="Center" Margin="30">
+                <Button Text="Prikaži korisnike" TextTransform="None"  Margin="0,15" HeightRequest="75" TextColor="#F27121"  Clicked="prikaziKorisnike" FontSize="20" FontAttributes="Bold" BorderWidth="1.5" CornerRadius="50" BorderColor="#fe8402">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="1,0">
+                            <GradientStop Color="white"  Offset="0.1"/>
+                            <GradientStop Color="#DBDBDB" Offset="0.5"/>
+                            <GradientStop Color="white" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Text="Prikaži poruke" TextTransform="None" Margin="0,15" HeightRequest="75" TextColor="#F27121" Clicked="prikaziPoruke" FontSize="20" FontAttributes="Bold" BorderWidth="1.5" CornerRadius="50" BorderColor="#fe8402">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="1,0">
+                            <GradientStop Color="white"  Offset="0.1"/>
+                            <GradientStop Color="#DBDBDB" Offset="0.5"/>
+                            <GradientStop Color="white" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

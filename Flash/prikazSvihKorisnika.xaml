@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flash.prikazSvihKorisnika"
+             BackgroundColor="#2F2235">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Prikaz korisnika" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 50, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <Grid>
+            <BoxView>
+                <BoxView.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#451244"  Offset="0.3"/>
+                        <GradientStop Color="#75202c" Offset="0.3"/>
+                        <GradientStop Color="#793911" Offset="0.4"/>
+                        <GradientStop Color="#75202c" Offset="0.7"/>
+                        <GradientStop Color="#451244"  Offset="0.8"/>
+                    </LinearGradientBrush>
+                </BoxView.Background>
+            </BoxView>
+
+            <StackLayout>
+
+                <Frame Margin="40,40" Padding="0,10" CornerRadius="5" HasShadow="True"
+                       HorizontalOptions="FillAndExpand" VerticalOptions="Fill" BorderColor="Gray">
+                    <Frame.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#afafaf"  Offset="0.5"/>
+                            <GradientStop Color="White" Offset="0.1"/>
+                            <GradientStop Color="#afafaf" Offset="0.5" />
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                    <ListView x:Name="lista" Margin="15,5" SeparatorColor="#F27121" RefreshControlColor="Transparent" SelectionMode="None">
+                        <ListView.ItemTemplate >
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Spacing="0">
+                                        <Label Text="{Binding korisnickoIme}" FontSize="20" FontAttributes="Bold" TextColor="#F27121"/>
+                                        <Label Text="{Binding brojTelefona}" FontSize="16" TextColor="#F27121"/>
+                                        <ImageButton CommandParameter="{Binding .}" Clicked="Brisanje" Source="delete.png" HorizontalOptions="End" BackgroundColor="Transparent" Margin="0,-30,0,0" WidthRequest="50" HeightRequest="25" />
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Frame>
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

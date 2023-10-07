@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flash.mojatv">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Moja TV" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 20, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <Grid>
+            <BoxView x:Name="bgGradient">
+                <BoxView.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#8A2387"  Offset="0.3"/>
+                        <GradientStop Color="#E94057" Offset="0.3"/>
+                        <GradientStop Color="#F27121" Offset="0.4"/>
+                        <GradientStop Color="#E94057" Offset="0.7"/>
+                        <GradientStop Color="#8A2387"  Offset="0.8"/>
+                    </LinearGradientBrush>
+                </BoxView.Background>
+            </BoxView>
+            <ScrollView>
+                <StackLayout>
+                    <Frame Margin="40,40,40,0" Padding="0,10" CornerRadius="5" HasShadow="True"
+                       HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+                        <Frame.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="White"  Offset="0.5"/>
+                                <GradientStop Color="#DBDBDB" Offset="0.1"/>
+                                <GradientStop Color="White" Offset="0.5"/>
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        <!--Prvi pasus-->
+                        <StackLayout>
+                            <Label HorizontalTextAlignment="Start" Text="Nema slike na TV prijemniku, crn ekran na svim kanalima ili se pojavila poruka Ekioh i/ili Error loading page. Šta da radim?" TextColor="#F27121" Padding="10,0" FontAttributes="Bold" FontSize="22"/>
+                            <Label HorizontalTextAlignment="Start" TextColor="#da661e" FontSize="20" Padding="10,0" Text="Provjerite da li su ispravno uključeni kablovi na modemu i STB uređaju slijedećim rasporedom:&#10;-	na modemu DSL indikator mora stalno svijetliti, što znači da je modem sinhronizovan i ima stabilan signal (DSL indikator ne smije da blinka, treperi). Ako DSL indikator blinka ili treperi znači da modem nema stabilan signal odmah pozovite na besplatan broj 1444;&#10;-	mrežni kabl LAN2 port-a na modemu (LAN 3 i LAN 4 u slučaju paketa sa 2 ili 3 STB uređaja) iz STB uređaj;&#10;-	mrežni kabl sa modema u LAN port STB uređaja;&#10;-	HDMI kabl iz STB uređaja u TV prijemnik ili komponentnih (SCART) kabl;&#10;-	strujni kabl u STB uređaju;&#10;-	isključite modem i STB uređaj. Zatim uključite modem, sačekajte da se DSL indikator na modemu stabilizuje, a zatim uključite STB uređaj."/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Margin="40,40,40,0" Padding="0,10" CornerRadius="5" HasShadow="True"
+                       HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+                        <Frame.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="White"  Offset="0.5"/>
+                                <GradientStop Color="#DBDBDB" Offset="0.1"/>
+                                <GradientStop Color="White" Offset="0.5"/>
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        <!--Drugi pasus-->
+                        <StackLayout>
+                            <Label HorizontalTextAlignment="Start" Text="Zaboravio/la sam PIN koji treba da unesem prilikom dopune kredita putem STB uređaja." TextColor="#F27121" Padding="10,0" FontAttributes="Bold" FontSize="20"/>
+                            <Label HorizontalTextAlignment="Start" TextColor="#da661e" FontSize="20" Padding="10,0" Text="Za korištenje navedene usluge koristite osnovni PIN, koji unosite prilikom pokretanja Moja TV usluge.&#10;Ukoliko ste zaboravili ili niste zapisali osnovni PIN, potrebno je da sa fiksnog telefona pozovete besplatni broj 1444 i zatražite dodjelu PIN-a.&#10;Ako ste korisnik moja TV Net paketa i nemate fiksni telefon, promjenu možete tražiti slanjem e-maila sa bih.net.ba adrese na: podrska@bhtelecom.ba."/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Margin="40,40,40,0" Padding="0,10" CornerRadius="5" HasShadow="True"
+                       HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+                        <Frame.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="White"  Offset="0.5"/>
+                                <GradientStop Color="#DBDBDB" Offset="0.1"/>
+                                <GradientStop Color="White" Offset="0.5"/>
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        <!--Treći pasus-->
+                        <StackLayout>
+                            <Label HorizontalTextAlignment="Start" Text="Koji je maksimalan broj TV prijemnika koje mogu koristiti u sklopu Moja TV usluge?" TextColor="#F27121" Padding="10,0" FontAttributes="Bold" FontSize="20"/>
+                            <Label HorizontalTextAlignment="Start" TextColor="#da661e" FontSize="20" Padding="10,0" Text="U sklopu Moja TV usluge je omogućeno korištenje najviše tri TV prijemnika, a za realizaciju potrebno je iznajmiti dodatni (drugi i/ili treći) STB uređaj. Instalacija će biti realizovana u skladu sa tehničkim mogućnostima."/>
+                        </StackLayout>
+                    </Frame>
+                    <Button Text="Nazad" Margin="0,40,0,40" Clicked="Nazad"  FontSize="20" TextColor="#F27121" BorderWidth="1.5" BorderColor="#F27121" CornerRadius="50" HorizontalOptions="Center" WidthRequest="250" >
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="1,0">
+                                <GradientStop Color="White"  Offset="0.1"/>
+                                <GradientStop Color="#DBDBDB" Offset="0.5"/>
+                                <GradientStop Color="White" Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flash.Poruka">
+    <ContentPage.Content>
+        <Grid>
+            <BoxView x:Name="bgGradient">
+                <BoxView.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#451244"  Offset="0.3"/>
+                        <GradientStop Color="#75202c" Offset="0.3"/>
+                        <GradientStop Color="#793911" Offset="0.4"/>
+                        <GradientStop Color="#75202c" Offset="0.7"/>
+                        <GradientStop Color="#451244"  Offset="0.8"/>
+                    </LinearGradientBrush>
+                </BoxView.Background>
+            </BoxView>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <Frame Margin="40,0" Padding="0,10" CornerRadius="5" HasShadow="True"
+                       HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+                    <Frame.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="White"  Offset="0.5"/>
+                            <GradientStop Color="#DBDBDB" Offset="0.1"/>
+                            <GradientStop Color="White" Offset="0.5"/>
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                    <StackLayout>
+                        <Label HorizontalOptions="Start" Text="Korisničko ime i prezime:" VerticalOptions="CenterAndExpand" TextColor="#F27121" Padding="10,0" FontAttributes="Bold" FontSize="20"/>
+                        <Label HorizontalOptions="Start" x:Name="korisnickoImeIPrezime" Text="" VerticalOptions="CenterAndExpand" TextColor="#F27121" Padding="10,0"  FontSize="20"/>
+                        <Label HorizontalOptions="Start" Text="E-Mail:" VerticalOptions="CenterAndExpand" TextColor="#F27121" Padding="10,0" FontAttributes="Bold" FontSize="20"/>
+                        <Label HorizontalOptions="Start" x:Name="EMail" Text="" VerticalOptions="CenterAndExpand" TextColor="#F27121" Padding="10,0"  FontSize="20"/>
+                        <Label HorizontalOptions="Start" Text="Naslov poruke:" VerticalOptions="CenterAndExpand" TextColor="#F27121" Padding="10,0" FontAttributes="Bold" FontSize="20"/>
+                        <Label HorizontalOptions="Start" x:Name="naslovPoruke" Text="" VerticalOptions="CenterAndExpand" TextColor="#F27121" Padding="10,0"  FontSize="20"/>
+                        <Label HorizontalOptions="Start" Text="Poruka:" VerticalOptions="CenterAndExpand" TextColor="#F27121" Padding="10,0" FontAttributes="Bold" FontSize="20"/>
+                        <Label HorizontalOptions="Start" x:Name="tekstPoruke" Text="" VerticalOptions="CenterAndExpand" TextColor="#F27121" Padding="10,0"  FontSize="20"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

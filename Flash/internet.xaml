@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flash.internet">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Internet" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 20, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <Grid>
+            <BoxView x:Name="bgGradient">
+                <BoxView.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#8A2387"  Offset="0.3"/>
+                        <GradientStop Color="#E94057" Offset="0.3"/>
+                        <GradientStop Color="#F27121" Offset="0.4"/>
+                        <GradientStop Color="#E94057" Offset="0.7"/>
+                        <GradientStop Color="#8A2387"  Offset="0.8"/>
+                    </LinearGradientBrush>
+                </BoxView.Background>
+            </BoxView>
+            <ScrollView>
+                <StackLayout>
+                    <Frame Margin="40,40,40,0" Padding="0,10" CornerRadius="5" HasShadow="True"
+                       HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+                        <Frame.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="White"  Offset="0.5"/>
+                                <GradientStop Color="#DBDBDB" Offset="0.1"/>
+                                <GradientStop Color="White" Offset="0.5"/>
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        <!--Prvi pasus-->
+                        <StackLayout>
+                            <Label HorizontalTextAlignment="Start" Text="Testirana brzina xDSL usluge je manja od zagarantovane paketom koji koristim" TextColor="#F27121" Padding="10,0" FontAttributes="Bold" FontSize="22"/>
+                            <Label HorizontalTextAlignment="Start" TextColor="#da661e" FontSize="20" Padding="10,0" Text="Potrebno je testirati brzinu isključivo putem žičane veze, dakle dok je računar/laptop kablom spojen direktno na modem BH Telecoma. Test brzine urađen na wifi mreži nije relevantan pokazatelj eventualnog odstupanja. Stranica na kojoj možete izvršiti testiranje je www.speedtest.net. U slučaju da je brzina testirana na navedeni pravilan način manja od zagarantovane paketom,  pozovite besplatan broj 1444"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Margin="40,40,40,0" Padding="0,10" CornerRadius="5" HasShadow="True"
+                       HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+                        <Frame.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="White"  Offset="0.5"/>
+                                <GradientStop Color="#DBDBDB" Offset="0.1"/>
+                                <GradientStop Color="White" Offset="0.5"/>
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        <!--Drugi pasus-->
+                        <StackLayout>
+                            <Label HorizontalTextAlignment="Start" Text="Na koji način mogu promjeniti šifru od xDSL usluge?" TextColor="#F27121" Padding="10,0" FontAttributes="Bold" FontSize="20"/>
+                            <Label HorizontalTextAlignment="Start" TextColor="#da661e" FontSize="20" Padding="10,0" Text="Šifru možete promijeniti na jedan od sljedećih načina:&#10;-	putem web stranice bhtelecom.ba (potrebno je da se prijavite sa svojim korisničkim podacima na stranici https://moj.bhtelecom.ba/),&#10;-	na prodajnom mjestu BH Telecoma,&#10;-	pozivom na besplatni broj 1444 sa broja telefona koji je u bazi BH Telecoma zaveden na ime nosioca xDSL usluge."/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Margin="40,40,40,0" Padding="0,10" CornerRadius="5" HasShadow="True"
+                       HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+                        <Frame.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="White"  Offset="0.5"/>
+                                <GradientStop Color="#DBDBDB" Offset="0.1"/>
+                                <GradientStop Color="White" Offset="0.5"/>
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        <!--Treći pasus-->
+                        <StackLayout>
+                            <Label HorizontalTextAlignment="Start" Text="Nemam WiFi signal na mobitelu i/ili tabletu i/ili laptopu. Šta da radim?" TextColor="#F27121" Padding="10,0" FontAttributes="Bold" FontSize="20"/>
+                            <Label HorizontalTextAlignment="Start" TextColor="#da661e" FontSize="20" Padding="10,0" Text="Provjerite na modemu da li svijetle lampice WLAN i ADSL. Ako na modemu ne svijetli lampica WLAN uključite dugme WLAN na poleđini, te provjerite da li je uključen WiFi na mobitelu. Ako je navedeni problem i dalje prisutan pozovite besplatan broj 1444 ili pošaljite e – mail na podrska@bhtelecom.ba."/>
+                        </StackLayout>
+                    </Frame>
+                    <Button Text="Nazad" Margin="0,40,0,40" Clicked="Nazad" FontSize="20" TextColor="#F27121" BorderWidth="1.5" BorderColor="#F27121" CornerRadius="50" HorizontalOptions="Center" WidthRequest="250" >
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="1,0">
+                                <GradientStop Color="White"  Offset="0.1"/>
+                                <GradientStop Color="#DBDBDB" Offset="0.5"/>
+                                <GradientStop Color="White" Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

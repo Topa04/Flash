@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="Flash.Page1"
+             BackgroundColor="#290a28">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Naše poslovnice" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <Grid>
+                <BoxView x:Name="bgGradient">
+                    <BoxView.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#8A2387"  Offset="0.3"/>
+                            <GradientStop Color="#E94057" Offset="0.3"/>
+                            <GradientStop Color="#F27121" Offset="0.4"/>
+                            <GradientStop Color="#E94057" Offset="0.7"/>
+                            <GradientStop Color="#8A2387"  Offset="0.8"/>
+                        </LinearGradientBrush>
+                    </BoxView.Background>
+                </BoxView>
+                <StackLayout VerticalOptions="Center" Margin="30">
+                <Button Text="BH Telecom centar Sarajevo Centar" TextTransform="None"  Margin="0,15" HeightRequest="75" TextColor="#F27121"  Clicked="Button_Clicked" FontSize="20" FontAttributes="Bold" BorderWidth="1.5" CornerRadius="50" BorderColor="#fe8402">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="1,0">
+                            <GradientStop Color="white"  Offset="0.1"/>
+                            <GradientStop Color="#DBDBDB" Offset="0.5"/>
+                            <GradientStop Color="white" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Text="BH Telecom centar Obala" TextTransform="None" Margin="0,15" HeightRequest="75" TextColor="#F27121" Clicked="Button_Clicked_1" FontSize="20" FontAttributes="Bold" BorderWidth="1.5" CornerRadius="50" BorderColor="#fe8402">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="white"  Offset="0.1"/>
+                        <GradientStop Color="#DBDBDB" Offset="0.5"/>
+                        <GradientStop Color="white" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+                </Button>
+                <Button Text="Poslovnica Dolac Malta" TextTransform="None" Margin="0,15"  HeightRequest="75" TextColor="#F27121" Clicked="Button_Clicked_2" FontSize="20" FontAttributes="Bold" BorderWidth="1.5" CornerRadius="50" BorderColor="#fe8402">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="1,0">
+                            <GradientStop Color="white"  Offset="0.1"/>
+                            <GradientStop Color="#DBDBDB" Offset="0.5"/>
+                            <GradientStop Color="white" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Text="BH Telecom centar Ilidža" TextTransform="None" Margin="0,15"  HeightRequest="75" TextColor="#F27121" Clicked="Button_Clicked_3" FontSize="20" FontAttributes="Bold" BorderWidth="1.5" CornerRadius="50" BorderColor="#fe8402">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="1,0">
+                            <GradientStop Color="white"  Offset="0.1"/>
+                            <GradientStop Color="#DBDBDB" Offset="0.5"/>
+                            <GradientStop Color="white" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Text="BH Telecom centar SCC" TextTransform="None" Margin="0,15" HeightRequest="75" TextColor="#F27121" Clicked="Button_Clicked_4" FontSize="20" FontAttributes="Bold" BorderWidth="1.5" CornerRadius="50" BorderColor="#fe8402">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="1,0">
+                            <GradientStop Color="white"  Offset="0.1"/>
+                            <GradientStop Color="#DBDBDB" Offset="0.5"/>
+                            <GradientStop Color="white" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                </StackLayout>
+            </Grid>
+    </ContentPage.Content>
+</ContentPage>

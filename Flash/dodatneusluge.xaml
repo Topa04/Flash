@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flash.dodatneusluge">
+    <NavigationPage.TitleView>
+    <StackLayout>
+        <Label Text="Dodatne usluge" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 20, 0" />
+    </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <Grid>
+            <BoxView x:Name="bgGradient">
+                <BoxView.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#8A2387"  Offset="0.3"/>
+                        <GradientStop Color="#E94057" Offset="0.3"/>
+                        <GradientStop Color="#F27121" Offset="0.4"/>
+                        <GradientStop Color="#E94057" Offset="0.7"/>
+                        <GradientStop Color="#8A2387"  Offset="0.8"/>
+                    </LinearGradientBrush>
+                </BoxView.Background>
+            </BoxView>
+            <ScrollView>
+                <StackLayout>
+                    <Frame Margin="40,40,40,0" Padding="0,10" CornerRadius="5" HasShadow="True"
+                       HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+                        <Frame.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="White"  Offset="0.5"/>
+                                <GradientStop Color="#DBDBDB" Offset="0.1"/>
+                                <GradientStop Color="White" Offset="0.5"/>
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        <!--Prvi pasus-->
+                        <StackLayout>
+                            <Label HorizontalTextAlignment="Start" Text="Nisam u mogućnosti slati ili primati e-mail poruke putem mail klijenta. Šta da radim?" TextColor="#F27121" Padding="10,0" FontAttributes="Bold" FontSize="22"/>
+                            <Label HorizontalTextAlignment="Start" TextColor="#da661e" FontSize="20" Padding="10,0" Text="Provjerite postavke incoming i outgoing mail servera: incoming mail server: in.mail.bih.net.ba, outgoing mail server: out.mail.bih.net.ba. Provjerite da li je uključena opcija: My outgoing server requires authentication."/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Margin="40,40,40,0" Padding="0,10" CornerRadius="5" HasShadow="True"
+                       HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+                        <Frame.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="White"  Offset="0.5"/>
+                                <GradientStop Color="#DBDBDB" Offset="0.1"/>
+                                <GradientStop Color="White" Offset="0.5"/>
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        <!--Drugi pasus-->
+                        <StackLayout>
+                            <Label HorizontalTextAlignment="Start" Text="Primio/la sam e-mail od BH Telecoma u kojem se traži da pošaljem svvoje korisničke podatke: username i password. Da li sam dužan/na dostaviti te podatke?" TextColor="#F27121" Padding="10,0" FontAttributes="Bold" FontSize="20"/>
+                            <Label HorizontalTextAlignment="Start" TextColor="#da661e" FontSize="20" Padding="10,0" Text="BH Telecom ni u kom slučaju neće tražiti od korisnika da dostavi svoje korisničke podatke. Ovakvi e-mailovi su zlonamjerni, nisu poslani od strane BH Telecoma i ni u kom slučaju niste dužni odgovarati na iste. E-mail je potrebno izbrisati i ne odgovarati na isti."/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Margin="40,40,40,0" Padding="0,10" CornerRadius="5" HasShadow="True"
+                       HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+                        <Frame.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="White"  Offset="0.5"/>
+                                <GradientStop Color="#DBDBDB" Offset="0.1"/>
+                                <GradientStop Color="White" Offset="0.5"/>
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        <!--Treći pasus-->
+                        <StackLayout>
+                            <Label HorizontalTextAlignment="Start" Text="U posljednje vrijeme primam veliki broj e-mailova sa jedne (nepoznate) e-mail adrese, što ometa normalnu funkciju e-maila. Šta da radim?" TextColor="#F27121" Padding="10,0" FontAttributes="Bold" FontSize="20"/>
+                            <Label HorizontalTextAlignment="Start" TextColor="#da661e" FontSize="20" Padding="10,0" Text="U pitanju je spamerska aktivnost nastala kao posljedica virusa ili otvaranja zaraženih web sadržaja, te su pristupni podaci za vaš  e-mail ugroženi.&#10;Potrebno je hitno napraviti promjenu lozinke (portal Moj BH Telecom) ili pozivom na besplatan broj 1444)."/>
+                        </StackLayout>
+                    </Frame>
+                    <Button Text="Nazad" Margin="0,40,0,40" Clicked="Nazad" FontSize="20" TextColor="#F27121" BorderWidth="1.5" BorderColor="#F27121" CornerRadius="50" HorizontalOptions="Center" WidthRequest="250" >
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="1,0">
+                                <GradientStop Color="White"  Offset="0.1"/>
+                                <GradientStop Color="#DBDBDB" Offset="0.5"/>
+                                <GradientStop Color="White" Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

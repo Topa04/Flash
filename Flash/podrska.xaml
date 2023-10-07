@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flash.podrska">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Podrška" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+
+        <ScrollView>
+            <Grid>
+                <BoxView x:Name="bgGradient">
+                    <BoxView.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#8A2387"  Offset="0.3"/>
+                            <GradientStop Color="#E94057" Offset="0.3"/>
+                            <GradientStop Color="#F27121" Offset="0.4"/>
+                            <GradientStop Color="#E94057" Offset="0.7"/>
+                            <GradientStop Color="#8A2387"  Offset="0.8"/>
+                        </LinearGradientBrush>
+                    </BoxView.Background>
+                </BoxView>
+                <StackLayout>
+
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="210"/>
+                            <ColumnDefinition Width="205"/>
+
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="160"/>
+                            <RowDefinition Height="80"/>
+                            <RowDefinition Height="160"/>
+                            <RowDefinition Height="80"/>
+                            <RowDefinition Height="180"/>
+
+
+
+                        </Grid.RowDefinitions>
+
+                        <Image Source="telefon.png" Grid.Column="0" Grid.Row="1" HeightRequest="160" 
+                               WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Fiksna telefonija" TextColor="White" FontAttributes="Bold" Grid.Column="0" 
+                               Grid.Row="2" FontSize="20" HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Start"/>
+                        <Image Source="internet.png" Grid.Column="1" Grid.Row="1" HeightRequest="160" 
+                               WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped1"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Internet" TextColor="White" FontAttributes="Bold" Grid.Column="1" 
+                               Grid.Row="2" FontSize="20" HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Start"/>
+                        <Image Source="tv.png" Grid.Column="0" Grid.Row="3" HeightRequest="160" 
+                               WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped2"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Moja TV" TextColor="White" FontAttributes="Bold" Grid.Column="0" 
+                               Grid.Row="4" FontSize="20" HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Start"/>
+                        <Image Source="mobitel.png" Grid.Column="1" Grid.Row="3" HeightRequest="160" 
+                               WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped3"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Mobilna telefonija" TextColor="White" FontAttributes="Bold" Grid.Column="1" 
+                               Grid.Row="4" FontSize="20" HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Start"/>
+                        <Image Source="servis.png" Grid.Column="0" Grid.Row="5" HeightRequest="160" 
+                               WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped4"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Servis uređaja" TextColor="White" FontAttributes="Bold" Grid.Column="0" 
+                               Grid.Row="6" FontSize="20" HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Start"/>
+                        <Image Source="dodatno.png" Grid.Column="1" Grid.Row="5" HeightRequest="160" 
+                               WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped5"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Dodatne usluge" TextColor="White" FontAttributes="Bold" Grid.Column="1" 
+                               Grid.Row="6" FontSize="20" HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Start"/>
+
+                    </Grid>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

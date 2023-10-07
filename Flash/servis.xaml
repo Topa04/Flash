@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flash.servis">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Servis uređaja" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 20, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <Grid>
+            <BoxView x:Name="bgGradient">
+                <BoxView.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#8A2387"  Offset="0.3"/>
+                        <GradientStop Color="#E94057" Offset="0.3"/>
+                        <GradientStop Color="#F27121" Offset="0.4"/>
+                        <GradientStop Color="#E94057" Offset="0.7"/>
+                        <GradientStop Color="#8A2387"  Offset="0.8"/>
+                    </LinearGradientBrush>
+                </BoxView.Background>
+            </BoxView>
+            <ScrollView>
+                <StackLayout>
+                    <Frame Margin="40,40,40,0" Padding="0,10" CornerRadius="5" HasShadow="True"
+                       HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+                        <Frame.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="White"  Offset="0.5"/>
+                                <GradientStop Color="#DBDBDB" Offset="0.1"/>
+                                <GradientStop Color="White" Offset="0.5"/>
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        <!--Prvi pasus-->
+                        <StackLayout>
+                            <Label HorizontalTextAlignment="Start" Text="Kupio/la sam mobilni uređaj/tablet/laptop u BH Telecomu i prestao je raditi. Gdje ga mogu predati na servis?" TextColor="#F27121" Padding="10,0" FontAttributes="Bold" FontSize="22"/>
+                            <Label HorizontalTextAlignment="Start" TextColor="#da661e" FontSize="20" Padding="10,0" Text="Mobilni uređaj/tablet/laptop koji je kupljen u BH Telecomu, a koji je prestao ispravno raditi možete predati na bilo kojem prodajnom mjestu BH Telecoma. Također, imate mogućnost i kontaktirati ovlašteni servisni centar koji je naznačen na garantnom listu ili uređaj odnijeti/poslati u ovlašteni servisni centar."/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Margin="40,40,40,0" Padding="0,10" CornerRadius="5" HasShadow="True"
+                       HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+                        <Frame.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="White"  Offset="0.5"/>
+                                <GradientStop Color="#DBDBDB" Offset="0.1"/>
+                                <GradientStop Color="White" Offset="0.5"/>
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        <!--Drugi pasus-->
+                        <StackLayout>
+                            <Label HorizontalTextAlignment="Start" Text="Što sve moram napraviti prije nego mobilni uređaj predam na servis?" TextColor="#F27121" Padding="10,0" FontAttributes="Bold" FontSize="20"/>
+                            <Label HorizontalTextAlignment="Start" TextColor="#da661e" FontSize="20" Padding="10,0" Text="Prije nego što predate mobilni uređaj bitno je da:&#10;-	Spasite Vaše podatke,&#10;-	Isključite sve lozinke i PIN-ove (za korisnike iPhone uređaja obavezno isključiti opciju Find my phone),&#10;-	Uz uređaj potrebno je obavezno da imate i svu opremu koja je povezana sa kvarom, npr. ako je kvar povezan s punjenjem uređaja, obavezno priložite i punjač,&#10;-	Priložite ovjeren garantni list koji ste dobili prilikom kupovine mobilnog uređaja."/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Margin="40,40,40,0" Padding="0,10" CornerRadius="5" HasShadow="True"
+                       HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+                        <Frame.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="White"  Offset="0.5"/>
+                                <GradientStop Color="#DBDBDB" Offset="0.1"/>
+                                <GradientStop Color="White" Offset="0.5"/>
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        <!--Treći pasus-->
+                        <StackLayout>
+                            <Label HorizontalTextAlignment="Start" Text="Imam li pravo na zamjenski mobilni ređaj dok je moj na popravku?" TextColor="#F27121" Padding="10,0" FontAttributes="Bold" FontSize="20"/>
+                            <Label HorizontalTextAlignment="Start" TextColor="#da661e" FontSize="20" Padding="10,0" Text="Da, BH Telecom će Vam omogućiti da koristite zamjenski mobilni uređaj dok se Vaš ne vrati sa servisa, ukoliko ste uređaj predali na prodajno mjesto BH Telecoma."/>
+                        </StackLayout>
+                    </Frame>
+                    <Button Text="Nazad" Margin="0,40,0,40" Clicked="Nazad"  FontSize="20" TextColor="#F27121" BorderWidth="1.5" BorderColor="#F27121" CornerRadius="50" HorizontalOptions="Center" WidthRequest="250" >
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="1,0">
+                                <GradientStop Color="White"  Offset="0.1"/>
+                                <GradientStop Color="#DBDBDB" Offset="0.5"/>
+                                <GradientStop Color="White" Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

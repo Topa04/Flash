@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flash.lokacija2"
+            Title="BH Telecom centar Obala">
+    
+    <ContentPage.Content>
+        <Grid>
+            <BoxView x:Name="bgGradient">
+                <BoxView.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#8A2387"  Offset="0.3"/>
+                        <GradientStop Color="#E94057" Offset="0.3"/>
+                        <GradientStop Color="#F27121" Offset="0.4"/>
+                        <GradientStop Color="#E94057" Offset="0.7"/>
+                        <GradientStop Color="#8A2387"  Offset="0.8"/>
+                    </LinearGradientBrush>
+                </BoxView.Background>
+            </BoxView>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <Frame Margin="-10,0" Padding="0,10" CornerRadius="5" HasShadow="True"
+                       HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+                    <Frame.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="White"  Offset="0.5"/>
+                            <GradientStop Color="#DBDBDB" Offset="0.1"/>
+                            <GradientStop Color="White" Offset="0.5"/>
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                    <StackLayout>
+                        <Label HorizontalOptions="Start" Text="Adresa:" VerticalOptions="CenterAndExpand" TextColor="#F27121" Padding="10,0" FontAttributes="Bold" FontSize="20"/>
+                        <Label HorizontalOptions="Start" Text="Obala Kulina bana 8" VerticalOptions="CenterAndExpand" TextColor="#F27121" Padding="10,0"  FontSize="20"/>
+                        <Label HorizontalOptions="Start" Text="Radno vrijeme:" VerticalOptions="CenterAndExpand" TextColor="#F27121" Padding="10,0" FontAttributes="Bold" FontSize="20"/>
+                        <Label HorizontalOptions="Start" Text="Pon-Pet: 08:00 - 16:00" VerticalOptions="CenterAndExpand" TextColor="#F27121" Padding="10,0"  FontSize="20"/>
+                        <Label HorizontalOptions="Start" Text="Vikendom zatvoreno." VerticalOptions="CenterAndExpand" TextColor="#F27121" Padding="10,0"  FontSize="20"/>
+                        <Label HorizontalOptions="Start" Text="Kontakt telefon:" VerticalOptions="CenterAndExpand" TextColor="#F27121" Padding="10,0" FontAttributes="Bold" FontSize="20"/>
+                        <Label HorizontalOptions="Start" Text="+387 33 553 765" VerticalOptions="CenterAndExpand" TextColor="#F27121" Padding="10,0"  FontSize="20"/>
+                    </StackLayout>
+                </Frame>
+                <Button Text="Otvori na karti" Margin="20" Padding="75,0" VerticalOptions="Center" HorizontalOptions="Center" TextColor="#F27121" FontSize="18" Clicked="Button_Clicked" FontAttributes="Bold" BorderWidth="1.5" CornerRadius="50" BorderColor="#F27121 ">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="1,0">
+                            <GradientStop Color="White"  Offset="0.1"/>
+                            <GradientStop Color="#DBDBDB" Offset="0.5"/>
+                            <GradientStop Color="White" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

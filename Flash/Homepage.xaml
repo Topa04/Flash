@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flash.Homepage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+
+        <ScrollView>
+            <Grid>
+                <BoxView x:Name="bgGradient">
+                    <BoxView.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#8A2387"  Offset="0.3"/>
+                            <GradientStop Color="#E94057" Offset="0.3"/>
+                            <GradientStop Color="#F27121" Offset="0.4"/>
+                            <GradientStop Color="#E94057" Offset="0.7"/>
+                            <GradientStop Color="#8A2387"  Offset="0.8"/>
+                        </LinearGradientBrush>
+                    </BoxView.Background>
+                </BoxView>
+                <StackLayout>
+
+                    <Label Text="Uvijek uz Vas kada trebate pomoć." TextColor="White" FontAttributes="Bold" FontSize="28"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="20,0,20,0" />
+                    <Label Text="Dobro došli!" TextColor="White" VerticalOptions="FillAndExpand" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" FontSize="25"/>
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="210"/>
+                            <ColumnDefinition Width="205"/>
+
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0"/>
+                            <RowDefinition Height="160"/>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="160"/>
+                            <RowDefinition Height="70"/>
+                            <RowDefinition Height="0"/>
+
+
+
+                        </Grid.RowDefinitions>
+
+                        <Image Source="korisnik.png" Grid.Column="0" Grid.Row="1" HeightRequest="160" 
+                               WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Korisnička podrška" TextColor="White" FontAttributes="Bold" Grid.Column="0" 
+                               Grid.Row="2" FontSize="20" HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Start"/>
+                        <Image Source="paket.png" Grid.Column="1" Grid.Row="1" HeightRequest="160" 
+                               WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped1"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Paket za Vas" TextColor="White" FontAttributes="Bold" Grid.Column="1" 
+                               Grid.Row="2" FontSize="20" HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Start"/>
+                        <Image Source="lokacija.png" Grid.Column="0" Grid.Row="3" HeightRequest="160" 
+                               WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped2"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Naše poslovnice" TextColor="White" FontAttributes="Bold" Grid.Column="0" 
+                               Grid.Row="4" FontSize="20" HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Start"/>
+                        <Image Source="upitnik.png" Grid.Column="1" Grid.Row="3" HeightRequest="160" 
+                               WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped3"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Pišite nam" TextColor="White" FontAttributes="Bold" Grid.Column="1" 
+                               Grid.Row="4" FontSize="20" HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Start"/>
+
+                    </Grid>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

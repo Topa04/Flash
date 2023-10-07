@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flash.register"
+             BackgroundImageSource="pozadina.jpg"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:local="clr-namespace:Flash">
+    <ContentPage.Content>
+        <Grid Margin="20,0,20,0" VerticalOptions="StartAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0" Margin="0,100,0,50">
+                <Image Source="flash2.png" HeightRequest="120"/>
+                <Label Text="Registracija" HorizontalOptions="CenterAndExpand" FontSize="34" FontAttributes="bold" TextColor="White"/>
+            </StackLayout>
+            <Frame Grid.Row="1" CornerRadius="50" BorderColor="#999999" HasShadow="false" HeightRequest="450" BackgroundColor="#e6e6e6">
+                <StackLayout>
+                    <Frame BackgroundColor="White" CornerRadius="30" Padding="0" Margin="20,20,20,0">
+                        <local:CustomEntry Placeholder="Korisničko ime" FontSize="20" x:Name="unosUsername" PlaceholderColor="#f69c64" TextColor="#F27121" Margin="20,5" FontAttributes="Bold" ClearButtonVisibility="WhileEditing" ReturnType="Next"/>
+                    </Frame>
+                    <Frame BackgroundColor="White" CornerRadius="30" Padding="0" Margin="20,20,20,0">
+                        <local:CustomEntry Keyboard="Telephone" Placeholder="Broj Telefona" FontSize="20" x:Name="unosBrojTelefona" PlaceholderColor="#f69c64" TextColor="#F27121" Margin="20,5" FontAttributes="Bold"  ClearButtonVisibility="WhileEditing" ReturnType="Next"/>
+                    </Frame>
+                    <Frame BackgroundColor="White" CornerRadius="30" Padding="0" Margin="20,20,20,0">
+                        <local:CustomEntry Placeholder="Šifra" FontSize="20" IsPassword="True" x:Name="unosSifre" PlaceholderColor="#f69c64" TextColor="#F27121" Margin="20,5" FontAttributes="Bold"  ClearButtonVisibility="WhileEditing" ReturnType="Next"/>
+                    </Frame>
+                    <Frame BackgroundColor="White" CornerRadius="30" Padding="0" Margin="20,20,20,0">
+                        <local:CustomEntry Placeholder="Ponovo unesite šifru" FontSize="20" IsPassword="True" x:Name="unosPSifre" PlaceholderColor="#f69c64" TextColor="#F27121" Margin="20,5" FontAttributes="Bold"  ClearButtonVisibility="WhileEditing" ReturnType="Next"/>
+                    </Frame>
+                    <Button Text="Registruj se" Clicked="Registracija"  VerticalOptions="Center" HeightRequest="60" TextColor="WHite" FontSize="18" FontAttributes="Bold" CornerRadius="30" BorderWidth="1.5" BorderColor="LightGray" Margin="20,60,20,45">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="1,0">
+                                <GradientStop Color="#F27121"  Offset="0.1"/>
+                                <GradientStop Color="#E94057" Offset="0.8"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </StackLayout>
+            </Frame>
+
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>
